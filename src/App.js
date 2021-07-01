@@ -1,28 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-//iteration 0 -- import
+import FoodBox from './FoodBox'
+//iteration 0 -- import:
 import 'bulma/css/bulma.css';
 import foods from './foods.json';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FoodBox foods={foods}/>
     </div>
   );
 }
